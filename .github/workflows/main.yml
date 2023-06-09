@@ -19,12 +19,12 @@
 name: Github action ofr
 on:
   push:
-  brenches: [master]
+    branches: [master]
   jobs:
    build:
-     run-on: ubantu-latest
+     runs-on: ubantu-latest
      steps:
-       -uses: action/checkout@v3
+       -uses: actions/checkout@v3
        -name: Print node version
         run: node --version
       - name: Print NPM version
