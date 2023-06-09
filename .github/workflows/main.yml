@@ -25,7 +25,7 @@ on:
      run-on: ubantu-latest
      steps:
        -uses: action/checkout@v3
-        name: Print node version
+       -name: Print node version
         run: node --version
       - name: Print NPM version
         run: npm --version
