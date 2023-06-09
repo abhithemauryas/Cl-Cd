@@ -1,1 +1,33 @@
 # Workflow
+
+# tittle: Website Name
+# description : A website for uploading content
+
+
+# #Array
+# tags:
+# -technology
+# -images
+# -creative
+
+# #objects
+# address:
+# street: MG Road
+# City: Bng
+# State: KA
+
+name: Github action ofr
+on:
+  push:
+  brenches: [master]
+  jobs:
+   build:
+     run-on: ubantu-latest
+     steps:
+       -uses: action/checkout@v3
+        name: Print node version
+        run: node --version
+      - name: Print NPM version
+        run: npm --version
+      - name: Print pwd
+        run: pwd 
